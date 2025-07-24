@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XR Stage - Mixed Reality Technology Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>XRStage</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="language-toggle" onclick="toggleLanguage()">
+                    <span class="lang-text">한국어</span>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Redefining</span>
+                    <span class="title-line highlight">XR with AI</span>
+                </h1>
+                <p class="hero-description">
+                    Blending AI and XR to create next-gen real world experiences.
+                </p>
+                <button class="cta-button" onclick="scrollToContact()">
+                    문의하기
+                </button>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <img src="Gemini_Generated_Image_l7mmukl7mmukl7mm.jpeg" alt="AI and XR Integration - Neural Networks and Virtual Reality" class="hero-image">
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Our Pursuit of AI in XR</h2>
+                    <p class="about-description">
+                        We are pioneering the future of extended reality by seamlessly integrating artificial intelligence in immersive environment.
+                    </p>
+                    <p class="about-description-kr">
+                        XRStage는 인공지능과 몰입형 기술을 융합한 XR의 미래를 선도합니다.
+                    </p>
+                </div>
+                <div class="about-visual">
+                    <div class="tech-section">
+                        <h3 class="tech-category">AI Enhanced XR</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Multimodal AI</span>
+                                <small>Vision AI, Voice AI, LLM</small>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-vr-cardboard"></i>
+                                <span>XR Platforms</span>
+                                <small>Apple Vision Pro, Meta Quest</small>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-paint-brush"></i>
+                                <span>Creative Planning</span>
+                                <small>Innovative Concepts & Storytelling</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">[OUR PORTFOLIO]</h2>
+            <div class="portfolio-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image">
+                                <div class="placeholder-image"></div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3>Speakeasy - AI Chatbot</h3>
+                                <p>An immersive XR space for emotional healing using LLM, TTS, STT, and OpenXR technologies</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Meta Quest</span>
+                                    <span class="tag">AI Therapy</span>
+                                    <span class="tag">Emotional Healing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="portfolio-image">
+                                <div class="placeholder-image"></div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3>Ecolens</h3>
+                                <p>AI-XR ecological experience with plant recognition using CNN, ViT, and LLM-based natural language processing</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Meta Quest</span>
+                                    <span class="tag">Computer Vision</span>
+                                    <span class="tag">Educational</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="portfolio-image">
+                                <div class="placeholder-image"></div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3>Weather Watch</h3>
+                                <p>Real-time 3D weather visualization with spatial widgets for Apple Vision Pro</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Apple Vision Pro</span>
+                                    <span class="tag">3D Weather</span>
+                                    <span class="tag">Spatial UI</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="portfolio-image">
+                                <div class="placeholder-image"></div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3>Calculator Voice</h3>
+                                <p>Voice-controlled calculator with spatial user interface for hands-free operation</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Apple Vision Pro</span>
+                                    <span class="tag">Voice Control</span>
+                                    <span class="tag">Spatial UI</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="portfolio-image">
+                                <div class="placeholder-image"></div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3>Furniture Puzzle</h3>
+                                <p>AR furniture placement app with hand-tracking technology and AI assistant integration</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Apple Vision Pro</span>
+                                    <span class="tag">Hand Tracking</span>
+                                    <span class="tag">AR Placement</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev-btn" onclick="slidePortfolio('prev')">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="goToSlide(0)"></span>
+                        <span class="dot" onclick="goToSlide(1)"></span>
+                        <span class="dot" onclick="goToSlide(2)"></span>
+                        <span class="dot" onclick="goToSlide(3)"></span>
+                        <span class="dot" onclick="goToSlide(4)"></span>
+                    </div>
+                    <button class="carousel-btn next-btn" onclick="slidePortfolio('next')">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h2 class="section-title">Interested in a partnership?</h2>
+                    <h3 class="contact-subtitle">Contact us now.</h3>
+                    <button class="cta-button" onclick="openContactForm()">
+                        문의하기
+                    </button>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h4>XR Stage</h4>
+                        <p>서울 강남구 논현로152길 18, 201호 (신사동 587-10)</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>엑스알스테이지 XR Stage | 대표이사 이혜주</h4>
+                        <p>info.xrstage@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>XR Stage</h3>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 XR Stage. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactForm()">&times;</span>
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
