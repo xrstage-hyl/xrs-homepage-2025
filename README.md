@@ -155,6 +155,7 @@ Feel free to fork this project and submit pull requests for improvements:
 4. Test thoroughly
 5. Submit a pull request
 
+<<<<<<< HEAD
 ## 📞 Contact
 
 For questions or support regarding this clone project, please open an issue on the repository.
@@ -162,3 +163,6 @@ For questions or support regarding this clone project, please open an issue on t
 ---
 
 **Note**: This is a clone/educational project. The original website and brand belong to XR Stage. This project is not affiliated with or endorsed by XR Stage. 
+=======
+--
+>>>>>>> 248fc2ce63c11e64ec16bee5606a40d78bdbc11c
