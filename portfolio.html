@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | XR Stage</title>
+    <meta name="description" content="Explore our innovative XR projects and immersive experiences">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portfolio-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: white;">
+                    <svg width="96" height="30" viewBox="0 0 96 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="10" y="20" fill="white" font-family="Arial" font-size="16" font-weight="bold">XR STAGE</text>
+                    </svg>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="about.html" class="nav-link">Who We Are</a>
+                <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                <a href="platforms.html" class="nav-link">Platforms</a>
+            </div>
+            <div class="nav-right">
+                <button class="language-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="#D9D9D9" stroke-width="1.5"/>
+                        <path d="M12 2C12 2 16 6 16 12C16 18 12 22 12 22" stroke="#D9D9D9" stroke-width="1.5"/>
+                        <path d="M12 2C12 2 8 6 8 12C8 18 12 22 12 22" stroke="#D9D9D9" stroke-width="1.5"/>
+                        <path d="M3 12H21" stroke="#D9D9D9" stroke-width="1.5"/>
+                    </svg>
+                    <span>한국어</span>
+                </button>
+            </div>
+        </div>
+        <div class="nav-bottom-line"></div>
+    </nav>
+
+    <!-- Portfolio Hero -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1 class="page-title">Portfolio</h1>
+            <p class="page-subtitle">Transforming Ideas into Immersive Realities</p>
+            
+            <!-- Filter Categories -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="vr">VR Experiences</button>
+                <button class="filter-btn" data-filter="ar">AR Solutions</button>
+                <button class="filter-btn" data-filter="ai">AI Integration</button>
+                <button class="filter-btn" data-filter="enterprise">Enterprise</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project -->
+    <section class="featured-project">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-image">
+                    <img src="https://picsum.photos/800/600?random=1" alt="SPEAKEASY - AI CHATBOT">
+                    <div class="project-badge">Featured</div>
+                </div>
+                <div class="featured-info">
+                    <span class="project-category">META QUEST</span>
+                    <h2 class="featured-title">SPEAKEASY - AI CHATBOT</h2>
+                    <p class="featured-description">
+                        An immersive XR space for emotional healing using LLM, TTS, STT, and OpenXR technologies
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tag">AI THERAPY</span>
+                        <span class="tag">EMOTIONAL HEALING</span>
+                        <span class="tag">META QUEST</span>
+                        <span class="tag">OpenXR</span>
+                    </div>
+                    <button class="view-project-btn">View Case Study</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Project 1: Weather Watch -->
+                <div class="project-card" data-category="vr">
+                    <div class="project-image">
+                        <img src="https://picsum.photos/400/300?random=2" alt="Weather Watch">
+                        <div class="project-overlay">
+                            <button class="project-view-btn">View Project</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">APPLE VISION PRO</span>
+                        <h3>WEATHER. WATCH</h3>
+                        <p>Real-time 3D weather visualization with spatial widgets for Apple Vision Pro</p>
+                        <div class="project-tags">
+                            <span class="tag">3D WEATHER</span>
+                            <span class="tag">SPATIAL UI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: ECOLENS -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <img src="https://picsum.photos/400/300?random=3" alt="ECOLENS">
+                        <div class="project-overlay">
+                            <button class="project-view-btn">View Project</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">META QUEST</span>
+                        <h3>ECOLENS</h3>
+                        <p>AI-XR ecological experience with plant recognition using CNN, ViT, and LLM-based natural language processing</p>
+                        <div class="project-tags">
+                            <span class="tag">COMPUTER VISION</span>
+                            <span class="tag">EDUCATIONAL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Calculator Voice -->
+                <div class="project-card" data-category="vr ai">
+                    <div class="project-image">
+                        <img src="https://picsum.photos/400/300?random=4" alt="Calculator Voice">
+                        <div class="project-overlay">
+                            <button class="project-view-btn">View Project</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">APPLE VISION PRO</span>
+                        <h3>CALCULATOR. VOICE</h3>
+                        <p>Real-time 3D weather visualization with spatial widgets for Apple Vision Pro</p>
+                        <div class="project-tags">
+                            <span class="tag">VOICE CONTROL</span>
+                            <span class="tag">SPATIAL UI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Furniture Puzzle -->
+                <div class="project-card" data-category="ar">
+                    <div class="project-image">
+                        <img src="https://picsum.photos/400/300?random=5" alt="Furniture Puzzle">
+                        <div class="project-overlay">
+                            <button class="project-view-btn">View Project</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">APPLE VISION PRO</span>
+                        <h3>FURNITURE PUZZLE</h3>
+                        <p>AR furniture placement app with hand-tracking technology and AI assistant integration</p>
+                        <div class="project-tags">
+                            <span class="tag">HAND TRACKING</span>
+                            <span class="tag">AR PLACEMENT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internal Discussion Section -->
+    <section class="discussion-section">
+        <div class="container">
+            <div class="discussion-content">
+                <img src="https://picsum.photos/1200/600?random=6" alt="Internal Discussion" class="discussion-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Have a Project in Mind?</h2>
+            <p>Let's bring your vision to life with XR and AI</p>
+            <button class="cta-button">Start a Conversation</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">XR STAGE</div>
+                <div class="footer-info">
+                    <p>&copy; 2024 XR Stage. All rights reserved.</p>
+                    <p>Seoul, South Korea</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="portfolio-script.js"></script>
+</body>
+</html>

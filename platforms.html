@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platforms | XR Stage</title>
+    <meta name="description" content="Multi-platform XR development for visionOS, Meta Quest, and Android XR">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="platforms-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: white;">
+                    <svg width="96" height="30" viewBox="0 0 96 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="10" y="20" fill="white" font-family="Arial" font-size="16" font-weight="bold">XR STAGE</text>
+                    </svg>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="about.html" class="nav-link">Who We Are</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="platforms.html" class="nav-link active">Platforms</a>
+            </div>
+            <div class="nav-right">
+                <button class="language-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="#D9D9D9" stroke-width="1.5"/>
+                        <path d="M12 2C12 2 16 6 16 12C16 18 12 22 12 22" stroke="#D9D9D9" stroke-width="1.5"/>
+                        <path d="M12 2C12 2 8 6 8 12C8 18 12 22 12 22" stroke="#D9D9D9" stroke-width="1.5"/>
+                        <path d="M3 12H21" stroke="#D9D9D9" stroke-width="1.5"/>
+                    </svg>
+                    <span>한국어</span>
+                </button>
+            </div>
+        </div>
+        <div class="nav-bottom-line"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="platforms-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text-section">
+                    <h1 class="page-title">
+                        <span>Multi-Platform</span>
+                        <span class="gradient-text">XR Development</span>
+                    </h1>
+                    <p class="page-subtitle">
+                        Building immersive experiences across all major XR platforms
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platforms Grid -->
+    <section class="platforms-section">
+        <div class="container">
+            <div class="platforms-grid">
+                
+                <!-- Platform Images Background -->
+                <style>
+                    .platform-card {
+                        background-size: cover;
+                        background-position: center;
+                        position: relative;
+                    }
+                    .platform-card::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: rgba(0, 0, 0, 0.85);
+                        border-radius: 20px;
+                        z-index: 1;
+                    }
+                    .platform-card > * {
+                        position: relative;
+                        z-index: 2;
+                    }
+                </style>
+                
+                <!-- Apple Vision Pro -->
+                <div class="platform-card featured" style="background-image: url('https://picsum.photos/600/400?random=10')">
+                    <div class="platform-header">
+                        <div class="platform-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                <path d="M30 10 C20 10, 10 20, 10 30 C10 40, 20 50, 30 50 C40 50, 50 40, 50 30 C50 20, 40 10, 30 10" 
+                                      stroke="url(#apple-gradient)" stroke-width="2" fill="none"/>
+                                <path d="M30 20 L30 40 M20 30 L40 30" 
+                                      stroke="url(#apple-gradient)" stroke-width="2"/>
+                                <defs>
+                                    <linearGradient id="apple-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#00C7BE;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#0099FF;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h2>Apple Vision Pro</h2>
+                        <span class="platform-badge">visionOS</span>
+                    </div>
+                    <div class="platform-content">
+                        <p class="platform-description">
+                            Native visionOS development for spatial computing
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-item">SwiftUI</span>
+                            <span class="tech-item">RealityKit</span>
+                            <span class="tech-item">ARKit</span>
+                        </div>
+                        <ul class="capability-list">
+                            <li>Spatial Computing Apps</li>
+                            <li>Hand & Eye Tracking</li>
+                            <li>Immersive Experiences</li>
+                            <li>Shared Space Apps</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Meta Quest -->
+                <div class="platform-card" style="background-image: url('https://picsum.photos/600/400?random=11')">
+                    <div class="platform-header">
+                        <div class="platform-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                <circle cx="20" cy="30" r="15" stroke="url(#meta-gradient)" stroke-width="2" fill="none"/>
+                                <circle cx="40" cy="30" r="15" stroke="url(#meta-gradient)" stroke-width="2" fill="none"/>
+                                <defs>
+                                    <linearGradient id="meta-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#0668E1;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#0095F6;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h2>Meta Quest</h2>
+                        <span class="platform-badge">Android</span>
+                    </div>
+                    <div class="platform-content">
+                        <p class="platform-description">
+                            Optimized Quest apps for standalone VR
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-item">Unity</span>
+                            <span class="tech-item">Oculus SDK</span>
+                            <span class="tech-item">OpenXR</span>
+                        </div>
+                        <ul class="capability-list">
+                            <li>Quest 3 Mixed Reality</li>
+                            <li>Hand Tracking</li>
+                            <li>Passthrough AR</li>
+                            <li>Social VR Features</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Android XR -->
+                <div class="platform-card" style="background-image: url('https://picsum.photos/600/400?random=12')">
+                    <div class="platform-header">
+                        <div class="platform-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                <path d="M15 25 L30 10 L45 25 L45 45 L15 45 Z" 
+                                      stroke="url(#android-gradient)" stroke-width="2" fill="none"/>
+                                <circle cx="22" cy="20" r="2" fill="url(#android-gradient)"/>
+                                <circle cx="38" cy="20" r="2" fill="url(#android-gradient)"/>
+                                <defs>
+                                    <linearGradient id="android-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#3DDC84;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#4285F4;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h2>Android XR</h2>
+                        <span class="platform-badge">Coming Soon</span>
+                    </div>
+                    <div class="platform-content">
+                        <p class="platform-description">
+                            Next-gen Android XR platform development
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-item">Jetpack XR</span>
+                            <span class="tech-item">ARCore</span>
+                            <span class="tech-item">Gemini AI</span>
+                        </div>
+                        <ul class="capability-list">
+                            <li>Samsung Partnership</li>
+                            <li>AI Integration</li>
+                            <li>Cross-device Support</li>
+                            <li>Cloud Rendering</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-Platform Development -->
+    <section class="cross-platform">
+        <div class="container">
+            <h2 class="section-title">Cross-Platform Excellence</h2>
+            <div class="capabilities-grid">
+                <div class="capability">
+                    <h3>Platform-Specific Features</h3>
+                    <p>Leverage unique capabilities of each XR platform</p>
+                </div>
+                <div class="capability">
+                    <h3>Seamless Porting</h3>
+                    <p>Efficient migration between platforms</p>
+                </div>
+                <div class="capability">
+                    <h3>Performance Optimization</h3>
+                    <p>Native-level performance on every device</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="platforms-cta">
+        <div class="container">
+            <h2>Ready to Build for Every Platform?</h2>
+            <p>Let's create your XR app for all major platforms</p>
+            <div class="cta-buttons">
+                <button class="cta-button primary">Start Your Project</button>
+                <button class="cta-button secondary">Platform Consultation</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">XR STAGE</div>
+                <div class="footer-info">
+                    <p>&copy; 2024 XR Stage. All rights reserved.</p>
+                    <p>Seoul, South Korea</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="platforms-script.js"></script>
+</body>
+</html>

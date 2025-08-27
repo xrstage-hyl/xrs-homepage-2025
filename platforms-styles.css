@@ -1,0 +1,354 @@
+/* Platforms Page Styles */
+
+/* Hero Section */
+.platforms-hero {
+    padding: 180px 40px 80px;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(10, 10, 10) 100%);
+    text-align: center;
+}
+
+.page-title {
+    font-size: clamp(42px, 6vw, 72px);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.page-title span {
+    display: block;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #00C7BE 0%, #0099FF 50%, #0668E1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.page-subtitle {
+    font-size: clamp(18px, 2.5vw, 22px);
+    color: rgb(180, 180, 180);
+    font-weight: 300;
+}
+
+/* Platforms Grid */
+.platforms-section {
+    padding: 100px 40px;
+    background: radial-gradient(ellipse at center, rgb(5, 5, 15) 0%, rgb(0, 0, 0) 100%);
+}
+
+.platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.platform-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 40px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.platform-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--platform-color, #fff), transparent);
+    animation: slide 3s linear infinite;
+    opacity: 0;
+}
+
+.platform-card:hover::before {
+    opacity: 1;
+}
+
+.platform-card.featured {
+    grid-column: span 1;
+}
+
+.platform-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* Platform specific colors */
+.platform-card:nth-child(1) { --platform-color: #00C7BE; }
+.platform-card:nth-child(2) { --platform-color: #0095F6; }
+.platform-card:nth-child(3) { --platform-color: #3DDC84; }
+
+.platform-header {
+    margin-bottom: 30px;
+}
+
+.platform-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.platform-header h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.platform-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: rgb(180, 180, 180);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.platform-description {
+    font-size: 16px;
+    color: rgb(200, 200, 200);
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tech-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 13px;
+    color: rgb(180, 180, 180);
+}
+
+.capability-list {
+    list-style: none;
+    padding: 0;
+}
+
+.capability-list li {
+    color: rgb(160, 160, 160);
+    font-size: 15px;
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+.capability-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--platform-color, rgb(100, 100, 100));
+}
+
+/* Cross-Platform Section */
+.cross-platform {
+    padding: 100px 40px;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(10, 10, 10) 100%);
+}
+
+.section-title {
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: rgb(140, 140, 140);
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.capability {
+    text-align: center;
+}
+
+.capability h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.capability p {
+    font-size: 15px;
+    color: rgb(160, 160, 160);
+    line-height: 1.5;
+}
+
+/* Development Tools */
+.dev-tools {
+    padding: 100px 40px;
+    background: radial-gradient(ellipse at bottom, rgb(10, 10, 20) 0%, rgb(0, 0, 0) 100%);
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tool-category h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.tool-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tool-list span {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: rgb(180, 180, 180);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.tool-list span:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+/* CTA Section */
+.platforms-cta {
+    padding: 120px 40px;
+    background: linear-gradient(135deg, rgb(0, 10, 20) 0%, rgb(0, 0, 0) 100%);
+    text-align: center;
+}
+
+.platforms-cta h2 {
+    font-size: clamp(36px, 4vw, 48px);
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.platforms-cta p {
+    font-size: 20px;
+    color: rgb(180, 180, 180);
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-button.primary {
+    background: linear-gradient(135deg, #00C7BE 0%, #0099FF 100%);
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0, 153, 255, 0.4);
+}
+
+.cta-button.secondary {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 14px 38px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button.secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Animations */
+@keyframes slide {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .platforms-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .platform-card.featured {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 810px) {
+    .platforms-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .platform-card {
+        padding: 30px;
+    }
+    
+    .capabilities-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .tools-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
